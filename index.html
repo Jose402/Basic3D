@@ -1,0 +1,112 @@
+<html>
+    <head>        
+        <title>Basic3D</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" "shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="vendors/fullpage/jquery.fullPage.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        
+        
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <a class="navbar-brand" href="#Home" id="brand">Basic3D</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Basic">Edición Básica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Medium">Edición Intermedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Hard">Edición Avanzada</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        
+        <div id="fullpage" class="contenedor">
+            <div class="section" id="sectionHome">
+                <h1 class="fa-3x text-center">Basic3D - Un generador de código 3D</h1>
+                <br>
+                <h4 class="text-center">Segundo proyecto del curso Organización de Lenguajes y Compiladores 2</h4>
+                <div class="container align-items-center">
+                    <div class="row h-50">
+                        <div class="col align-self-center">
+                            <div class="card text-center" >
+                                <div class="card-body">
+                                    <a class="fas fa-puzzle-piece fa-10x" href="#Basic"></a>
+                                    <h4 class="card-title mt-3">Edición Básica</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card text-center" >
+                                <div class="card-body">
+                                    <a class="fas fa-graduation-cap fa-10x" href="#Medium"></a>
+                                    <h4 class="card-title mt-3">Edición Intermedia</h4>
+                                </div>
+                            </div>           
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card text-center" >
+                                <div class="card-body">
+                                    <a class="fas fa-skull fa-10x" href="#Hard"></a>
+                                    <h4 class="card-title mt-3">Edición Avanzada</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row">
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="sectionBasic">
+                <h1 class="text-center">Edición Básica</h1>
+            </div>
+
+            <div class="section" id="sectionMedium">
+                <h1 class="text-center">Edición Intermedia</h1>
+            </div>
+
+            <div class="section" id="sectionHard">
+                <h1 class="text-center" >Edición Avanzada</h1>
+                <textarea></textarea>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="vendors/fullpage/jquery-11.0.min.js"></script>
+        <script type="text/javascript" src="vendors/fullpage/jquery.fullPage.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#fullpage').fullpage({
+                    menu: '#menu',
+                    anchors: ['Home','Basic', 'Medium', 'Hard'],
+                    sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+                    navigation: true,
+                    navigationPosition: 'right',
+                    navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+                    slidesNavigation: true,
+    
+                });
+            });
+
+            
+        </script>
+    
+
+    </body>
+</html>

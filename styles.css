@@ -1,0 +1,33 @@
+
+#sectionHome{
+    margin-top: 5%;
+}
+
+.contenedor{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+a:link 
+{ 
+text-decoration:none;
+} 
+
+.card{
+    border: none;
+}
+.fa-puzzle-piece:hover{
+  color:yellow;
+}
+
+.fa-graduation-cap:hover{
+    color: orangered;
+}
+
+.fa-skull:hover{
+    color: red;   
+}
+
+.edition-title{
+    color: blue;
+}
